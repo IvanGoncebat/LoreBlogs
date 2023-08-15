@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donaciones</title>
+    <meta name="description" content="aqui podran donar para mantener a flote esta linda pagina, tu tienes una pagina divertida y nosotros podemos mantenerla, win win ">
+    <meta name="keywords" content="Donacion, mantenimiento, ayuda, minima, aporte">
     <link rel="shortcut icon" href="../imagenes/9346284.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../scss/styles.css">
 </head>
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">Menu</a>
+              <a class="navbar-brand" href="../index.html">Lore Blogs</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -39,42 +41,52 @@
             </div>
           </nav>
     </header>
-    <main>
+    <main class="dono">
         <h1 class="titulos"> Lore Blogs - Donaciones</h1>
-        <p class="donotext">Bienvenido al apartado de las donaciones, aqui podras ayudarnos a mantener nuestro espacio gamer 
+        <h2 class="donotext">Bienvenido al apartado de las donaciones, aqui podras ayudarnos a mantener nuestro espacio gamer 
             a mantenerse a flote, con tu granito de arena es posible seguir debatiendo de distintas maneras 
             en distintas categorias, y a su vez, mejorar la experiencia del consumidor, existen diferentes metodos
             de donaciones, aqui abajo te dejamos las opciones, no es obligatorio pero se agradece cualquier aporte
-        </p>
+        </h2>
 
-        <div>
-        <section class="donacion"> 
-           <a href="#">Metodo de pago 1 (Metodo por paypal)</a>  
-        </section>
-        <section class="donacion">  
-            <p>
-               <a href="#">Metodo de pago 2 (Metodo por bitcoin)</a> 
-            </p>
-        </section>
-        <section class="donacion">
-            <p>
-                <a href="#">Metodo de pago 3 (Metodo por tarjeta de credito)</a>
-            </p>
-        </section>
+        <div class="catdono">
+          <section> 
+            <input type="button" class="boton" value="Metodo de donacion por Paypal">
+          </section>
+          <section>  
+                <input type="button" class="boton" value="Metodo de donacion por Bitcoin">
+          </section>
+          <section>
+                  <input type="button" class="boton" value="Metodo de donacion por Tarjeta de credito">
+          </section>
         </div>
     </main>
-    <footer>
-        <section class="footercen">
-            <a href="../pages/contacto.html">Siganos en nuestras redes</a>
-            <a href="#">Legales</a>
-            <a href="#">Terminos y servicios</a>
-            <a href="#">Politicas de Privacidad</a>
-            <a href="#">Seguridad</a>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Anuncios basados en intereses</a>
-            <a href="#"> Empleo</a>
-            <a href="#">API</a>
-        </section>
+    <footer class="footercen">
+      <div class="container">
+        <div class="footer-row">
+          <section class="redes" >
+            <ul>
+              <li><a href="#">Legales</a></li>
+              <li><a href="#">Terminos y servicios</a></li>
+              <li><a href="#">Politicas de Privacidad</a></li>
+              <li><a href="#">Seguridad</a></li>
+            </ul>
+            <ul class="lista2" >
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Anuncios basados en intereses</a></li>
+              <li><a href="#"> Empleo</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+            <ul class="social">
+              <li><a href="#" class="red icono-facebook">Nuestro facebook</a></li>
+              <li><a href="#" class="red icono-twitter">Nuestro twitter</a></li>
+              <li><a href="#" class="red icono-tiktok">Nuestro tiktok</a></li>
+              <li><a href="#" class="red icono-instagram">Nuestro Instagram</a></li>
+              </section>
+            </ul>
+          </section>
+        </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

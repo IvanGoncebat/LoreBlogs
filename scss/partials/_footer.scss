@@ -1,0 +1,142 @@
+.footercen{
+    background-color: black;
+    padding: 50px 0;
+    list-style-type: none;
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: inline-block;
+        .footer-row{
+            .redes{
+                display: flex;
+                width: 1200px;
+                padding: 0 15px;
+                margin: 0 10px 10px 0;
+                line-height: 40px;
+                transition: all .5s ease;
+                gap: 33%;
+                .social{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    justify-content: space-between;
+                    gap: 4rem;
+
+                }
+               ul li a{
+                font-size: 18px;
+                text-decoration: none;
+                color: $blanco;
+                display: inline-block;
+                margin-bottom: 15px;
+                transition: all .3s ease;
+               } 
+
+               ul li a:hover{
+                
+                color: $blanco;
+                padding-left: 6px;
+
+
+               }
+
+            }
+        }
+    }
+}
+$redesSociales : (
+    facebook: rgb(41,78,202),
+    twitter: #10c4f6,
+    instagram: #bb920a,
+    tiktok: rgb(73, 64, 64),
+);
+
+@each $red, $color in $redesSociales {
+
+    .icono-#{$red}{
+        background-color: $color;
+        border-radius: 25%;
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 500px){
+
+    .footercen{
+        background-color: black;
+        padding: 50px 0;
+        list-style-type: none;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: inline-block;
+            .footer-row{
+                .redes{
+                    display: flex;
+                    width: 1200px;
+                    padding: 0 15px;
+                    margin: 0 10px 10px 0;
+                    line-height: 40px;
+                    transition: all .5s ease;
+                    gap: 33%;
+                    .social{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        justify-content: space-between;
+                        gap: 4rem;
+    
+                    }
+                   ul li a{
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: $blanco;
+                    display: inline-block;
+                    margin-bottom: 15px;
+                    transition: all .3s ease;
+                   } 
+    
+                   ul li a:hover{
+                    
+                    color: $blanco;
+                    padding-left: 6px;
+    
+    
+                   }
+    
+                }
+            }
+        }
+    }
+    $redesSociales : (
+        facebook: rgb(41,78,202),
+        twitter: #10c4f6,
+        instagram: #bb920a,
+        tiktok: rgb(73, 64, 64),
+    );
+    
+    @each $red, $color in $redesSociales {
+    
+        .icono-#{$red}{
+            background-color: $color;
+            border-radius: 25%;
+            padding: 1rem;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .footer-row{
+
+        text-align: center;
+    }
+    .redes{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .social{
+
+        text-align: center;
+
+    }
+}

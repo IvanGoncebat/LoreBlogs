@@ -1,0 +1,68 @@
+.contactoloreros{
+    color: white;
+    .titulos{
+        font-size: 4rem;
+        text-align: center; 
+        margin: 60px;
+        color:$blanco;
+    }
+
+    .contacttext{
+        font-size: 40px;
+    }
+
+
+    h2 {
+        font-size: 50px;
+
+    }
+}
+.mainpagprin{
+
+    h1{
+        font-size: 70px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h2{
+        margin: 20px;
+    }
+
+    p{
+        font-size: 20px ;
+        text-align: justify;
+        flex-wrap: wrap;
+        margin: 20px;
+     }
+
+}
+
+.librarytext {
+    h1{
+        font-size: 60px;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+.forotext{
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+        padding: 20px 0 0 20px;
+    }
+    h2{
+        padding: 20px 0 0 20px;
+        gap: 20px;
+    }
+}
+.dono{
+    .titulos{
+        font-size: 50px;
+        text-align: center;
+        padding: 20px 0 0 20px;
+    }
+}

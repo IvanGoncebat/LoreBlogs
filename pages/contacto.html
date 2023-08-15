@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
+    <meta name="description" content="Aqui podras contactarte con nuestra gente por problemas, preguntas o incluso por negocios">
+    <meta name="keywords" content="Contacto,problemas,soluciones,negocios,preguntas,respuestas,redes sociales">
     <link rel="shortcut icon" href="../imagenes/9346284.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../scss/styles.css">
 </head>
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">Menu</a>
+              <a class="navbar-brand" href="../index.html">Lore Blogs</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -39,52 +41,62 @@
             </div>
           </nav>
     </header>
-    <main>
+    <main class="contactoloreros">
         <h1 class="titulos">Lore Blogs- Contactos</h1>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ducimus quisquam eos ex deserunt ratione sunt hic inventore, architecto temporibus saepe placeat autem aut dolorum enim nihil veritatis reprehenderit dolores. Beatae quidem unde blanditiis consequuntur maxime sapiente, cupiditate deserunt facilis!
+        <p class="contacttext">
+            Bienvenidos a nuestra ventana para contactarnos ya sea por errores, por peticiones, por negocios e incluso para decir buen dia! no estamos 24/7 pendientes de los contactos pero ten por seguro que te contestaremos lo mas rapido posible, Hasta luego Loreros!
         </p>
-        <div>  
-            <form> 
-                <div class="input">
+        <h2>
+          Hasta luego Loreros!
+        </h2>
+        <section class="formulario" >  
+            <form  > 
+                <div class="entradas">
                     <input type="text" placeholder="Ingrese su Nombre" required>
                 </div>
-                <div lass="input">
+                <div >
                     <input type="email" placeholder="Ingrese su Email" required>
                 </div>
-                <div class="input">
+                <div >
                     <input type="text" placeholder="Ingrese el Asunto " required>
                 </div>
-                <div class="input">  
+                <div >  
                     <textarea placeholder="Ingrese su Mensaje" required></textarea>
                 </div>
-                <div class="input">   
+                <div class="botones">   
                     <input type="button" class="boton" value="Enviar">
                     <input type="reset" class="boton" value="Resetear" >
                 </div>
             </form>
-
-            <div>   
-                <div class="redes">
-                    <a href="#">Nuestro facebook</a>
-                    <a href="#">Nuestro instagram</a>
-                    <a href="#">Nuestro Tiktok</a> 
-                </div>
-            </div>
+          </section>    
         </div>
     </main>
-    <footer>
-        <section class="footercen">
-            <a href="../pages/contacto.html">Siganos en nuestras redes</a>
-            <a href="#">Legales</a>
-            <a href="#">Terminos y servicios</a>
-            <a href="#">Politicas de Privacidad</a>
-            <a href="#">Seguridad</a>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Anuncios basados en intereses</a>
-            <a href="#"> Empleo</a>
-            <a href="#">API</a>
-        </section>
+    <footer class="footercen">
+      <div class="container">
+        <div class="footer-row">
+          <section class="redes" >
+            <ul>
+              <li><a href="#">Legales</a></li>
+              <li><a href="#">Terminos y servicios</a></li>
+              <li><a href="#">Politicas de Privacidad</a></li>
+              <li><a href="#">Seguridad</a></li>
+            </ul>
+            <ul class="lista2" >
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Anuncios basados en intereses</a></li>
+              <li><a href="#"> Empleo</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+            <ul class="social">
+              <li><a href="#" class="red icono-facebook">Nuestro facebook</a></li>
+              <li><a href="#" class="red icono-twitter">Nuestro twitter</a></li>
+              <li><a href="#" class="red icono-tiktok">Nuestro tiktok</a></li>
+              <li><a href="#" class="red icono-instagram">Nuestro Instagram</a></li>
+              </section>
+            </ul>
+          </section>
+        </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

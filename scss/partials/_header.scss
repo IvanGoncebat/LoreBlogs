@@ -1,0 +1,34 @@
+.header{
+    background-image: linear-gradient(to right, purple, rgb(224, 141, 16));
+    justify-content: center;
+    .navbar{
+        --bs-bg-opacity: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+            .container-fluid{
+                .navbar-brand{
+                    color: $blanco;
+                }
+                .nav-item{
+                    --bs-nav-link-color: var;
+                    .nav-link {
+                        color: $blanco;
+                    }
+                }
+                .btn{
+                    background-color: $blanco;
+                    --bs-btn-hover-color:#198754;
+                }
+                .navbar-brand:hover{
+                    transition: 0.5s ease;
+                    font-size: 30px;
+                    transform: translateY(5px);
+                }
+                .nav-item:hover{
+                    transition: 0.5s ease;
+                    font-size: 20px;
+                    transform: translateY(5px);
+                }
+        }
+    }
+}
