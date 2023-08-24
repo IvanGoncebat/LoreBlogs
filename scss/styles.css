@@ -54,14 +54,11 @@ body {
   transform: translateY(5px);
 }
 
-.contactoloreros {
-  color: white;
-}
 .contactoloreros .titulos {
   font-size: 4rem;
   text-align: center;
   margin: 60px;
-  color: white;
+  color: black;
 }
 .contactoloreros .contacttext {
   font-size: 40px;
