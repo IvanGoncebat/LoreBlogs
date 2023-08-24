@@ -1,9 +1,16 @@
 .categorias {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+        )
+    );
     gap: 3rem;
     font-size: 2rem;
     padding: 20px 40px 40px;
+
         a:hover {
             transform: translateY(10px);
             font-size: 40px;

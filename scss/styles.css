@@ -3,25 +3,31 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: black;
 }
 
 body {
-  background-image: url(../imagenes/91654.jpg);
   padding: 0px;
   margin: 0px;
-  border: none;
-  width: 100%;
   color: white;
-  max-width: 100%;
+  max-height: 80vh;
+  padding-top: 70px;
+  flex-wrap: wrap;
 }
 
+@media (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 .header {
-  background-image: linear-gradient(to right, purple, rgb(224, 141, 16));
-  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: grey;
 }
 .header .navbar {
   --bs-bg-opacity: 0;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .header .navbar .container-fluid .navbar-brand {
@@ -67,8 +73,6 @@ body {
 .mainpagprin h1 {
   font-size: 70px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .mainpagprin h2 {
   margin: 20px;
@@ -104,7 +108,7 @@ body {
 
 .categorias {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 3rem;
   font-size: 2rem;
   padding: 20px 40px 40px;
@@ -170,137 +174,137 @@ body {
   padding-bottom: 20px;
 }
 
-.footercen {
-  background-color: black;
-  padding: 50px 0;
-  list-style-type: none;
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
 }
-.footercen .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: inline-block;
+.footer .container {
+  max-width: 1170px;
+  margin: auto;
 }
-.footercen .container .footer-row .redes {
+.footer .container .row {
   display: flex;
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 10px 10px 0;
-  line-height: 40px;
-  transition: all 0.5s ease;
-  gap: 33%;
-}
-.footercen .container .footer-row .redes .social {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 4rem;
 }
-.footercen .container .footer-row .redes ul li a {
+.footer .container .row .footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer .container .row .footer-col ul {
+  list-style: none;
+}
+.footer .container .row .footer-col h4 {
   font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer .container .row .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer .container .row .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer .container .row .footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
   text-decoration: none;
-  color: white;
-  display: inline-block;
-  margin-bottom: 15px;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
   transition: all 0.3s ease;
 }
-.footercen .container .footer-row .redes ul li a:hover {
-  color: white;
-  padding-left: 6px;
+.footer .container .row .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer .container .row .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer .container .row .footer-col .social-links a:hover {
+  color: #24262b;
 }
 
-.icono-facebook {
-  background-color: rgb(41, 78, 202);
-  border-radius: 25%;
-  padding: 1rem;
-}
-
-.icono-twitter {
-  background-color: #10c4f6;
-  border-radius: 25%;
-  padding: 1rem;
-}
-
-.icono-instagram {
-  background-color: #bb920a;
-  border-radius: 25%;
-  padding: 1rem;
-}
-
-.icono-tiktok {
-  background-color: rgb(73, 64, 64);
-  border-radius: 25%;
-  padding: 1rem;
-}
-
-@media (max-width: 500px) {
-  .footercen {
-    background-color: black;
-    padding: 50px 0;
-    list-style-type: none;
-  }
-  .footercen .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: inline-block;
-  }
-  .footercen .container .footer-row .redes {
-    display: flex;
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 10px 10px 0;
-    line-height: 40px;
-    transition: all 0.5s ease;
-    gap: 33%;
-  }
-  .footercen .container .footer-row .redes .social {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-between;
-    gap: 4rem;
-  }
-  .footercen .container .footer-row .redes ul li a {
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
-  }
-  .footercen .container .footer-row .redes ul li a:hover {
-    color: white;
-    padding-left: 6px;
-  }
-  .icono-facebook {
-    background-color: rgb(41, 78, 202);
-    border-radius: 25%;
-    padding: 1rem;
-  }
-  .icono-twitter {
-    background-color: #10c4f6;
-    border-radius: 25%;
-    padding: 1rem;
-  }
-  .icono-instagram {
-    background-color: #bb920a;
-    border-radius: 25%;
-    padding: 1rem;
-  }
-  .icono-tiktok {
-    background-color: rgb(73, 64, 64);
-    border-radius: 25%;
-    padding: 1rem;
-  }
-}
-@media (max-width: 500px) {
-  .footer-row {
-    text-align: center;
-  }
-  .redes {
-    text-align: center;
-    width: 100%;
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
     margin-bottom: 30px;
   }
-  .social {
-    text-align: center;
+}
+@media (max-width: 574px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
   }
+}
+:hover.fa-facebook {
+  background-color: rgb(41, 78, 202);
+  transition: all 0.5s ease;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+:hover.fa-twitter {
+  background-color: #10c4f6;
+  transition: all 0.5s ease;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+:hover.fa-instagram {
+  background-color: #bb920a;
+  transition: all 0.5s ease;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+:hover.fa-tiktok {
+  background-color: rgb(73, 64, 64);
+  transition: all 0.5s ease;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
 }/*# sourceMappingURL=styles.css.map */

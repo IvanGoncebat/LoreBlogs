@@ -1,9 +1,10 @@
 .header{
-    background-image: linear-gradient(to right, purple, rgb(224, 141, 16));
-    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: grey;
     .navbar{
         --bs-bg-opacity: 0;
-        max-width: 1200px;
         margin: 0 auto;
             .container-fluid{
                 .navbar-brand{

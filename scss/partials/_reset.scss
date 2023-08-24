@@ -3,14 +3,20 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    color: black;
 }
 body {  
-        background-image: url(../imagenes/91654.jpg);
         padding: 0px;
         margin: 0px;
-        border:none;
-        width: 100%;
         color: $blanco;
-        max-width: 100%;
-    
+        max-height: 80vh;
+        padding-top: 70px;
+        flex-wrap: wrap;
+}
+
+
+@media (max-width: 575px){
+    body{
+        overflow-x: hidden;
+}
 }
