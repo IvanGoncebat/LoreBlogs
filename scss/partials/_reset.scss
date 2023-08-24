@@ -9,14 +9,14 @@ body {
         padding: 0px;
         margin: 0px;
         color: $blanco;
-        max-height: 80vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100vh;
         padding-top: 70px;
         flex-wrap: wrap;
-}
-
-
-@media (max-width: 575px){
-    body{
         overflow-x: hidden;
 }
-}
+
+
