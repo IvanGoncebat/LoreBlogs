@@ -67,6 +67,10 @@ body {
   font-size: 50px;
 }
 
+.mainpagprin {
+  display: grid;
+  padding-right: 5px;
+}
 .mainpagprin h1 {
   font-size: 70px;
   text-align: center;
@@ -103,40 +107,53 @@ body {
   padding: 20px 0 0 20px;
 }
 
-.categorias {
-  gap: 3rem;
-  font-size: 2rem;
-  padding: 10px;
+.categorias ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  margin: 20px;
+  width: 75%;
+  gap: 20px;
 }
-.categorias a:hover {
-  transform: translateY(-3%);
-  font-size: 40px;
-  transition: 0.5s ease;
+.categorias ul li {
+  background-color: grey;
+  justify-content: center;
+  padding: 20px;
 }
 
-.tarjetitas {
+.forotext .catforo ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  margin: 20px;
-  gap: 10px;
-  background-color: grey;
-  width: 50%;
-}
-.tarjetitas h1 {
-  display: flex;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  font-size: 1.5rem;
-  padding-top: 10px;
+  list-style: none;
 }
-.tarjetitas a {
-  text-align: center;
+.forotext .catforo ul li {
+  background-color: grey;
+  padding: 20px;
+  width: 75%;
 }
 
 @media (max-width: 500px) {
   .categorias {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .categorias ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .forotext .catforo ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    list-style: none;
+  }
+  .forotext .catforo ul li {
+    background-color: grey;
+    padding: 20px;
+    width: 50%;
   }
 }
 .bibli {
@@ -151,6 +168,10 @@ body {
   gap: 1rem;
   padding: 1rem;
 }
+.dono .catdono :hover {
+  transform: translateY(-3%);
+  transition: 0.5 ease;
+}
 .dono .catdono .botones {
   background-color: purple;
   padding: 0.5rem 1rem;
@@ -158,15 +179,18 @@ body {
   border: 0;
   font-size: 1rem;
 }
-.dono .catdono:hover {
-  transform: translateY(20px);
-  transition: 0.5 ease;
-}
-.dono .donotext {
+
+.donotext {
   padding-top: 1rem;
   padding-bottom: 20px;
 }
 
+@media (max-width: 820px) {
+  .catdono {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .footer {
   background-color: #24262b;
   padding: 70px 0;

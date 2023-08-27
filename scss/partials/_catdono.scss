@@ -5,23 +5,33 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     padding: 1rem;
-    .botones{ 
-        background-color: purple;
-        padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
-        border: 0;
-        font-size: 1rem;
+        :hover{
+            transform: translateY(-3%) ;
+            transition: 0.5 ease;
+
+    }
+        .botones{ 
+            background-color: purple;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: 0;
+            font-size: 1rem;
+    }
+
 }
-
-    }
-
-    .catdono:hover{
-        transform: translateY(20px) ;
-        transition: 0.5 ease;
-
-    }
-    .donotext {
+}
+    
+    
+.donotext {
         padding-top: 1rem;
         padding-bottom: 20px;
-    }
+}
+
+
+@media (max-width:820px){
+    .catdono{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 }
