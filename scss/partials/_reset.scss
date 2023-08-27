@@ -3,20 +3,17 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: black;
 }
 body {  
         padding: 0px;
         margin: 0px;
-        color: $blanco;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-color: #1d2b3a;
         max-height: 100vh;
         padding-top: 70px;
-        flex-wrap: wrap;
+        color: $blanco;
         overflow-x: hidden;
+ 
 }
 
 

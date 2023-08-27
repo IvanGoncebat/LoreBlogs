@@ -1,19 +1,15 @@
-
-.formulario {
-    .entrada-row{
-        width: 150px;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+.formulario{
+    width: 340px;
+    height: 440px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    .button{
+      color: black;
     }
-    .botones{ 
-        background-color: purple;
-        padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
-        border: 0;
-        font-size: 1rem;
-}
+ }
+
 
 
 
